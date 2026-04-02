@@ -1,6 +1,6 @@
 from rtde_control import RTDEControlInterface as RTDEControl
 
-rtde_c = RTDEControl("192.168.1.104")
+rtde_c = RTDEControl("192.168.1.101") # Change to your robot's IP address
 
 task_frame = [0, 0, 0, 0, 0, 0]
 selection_vector = [0, 0, 1, 0, 0, 0]

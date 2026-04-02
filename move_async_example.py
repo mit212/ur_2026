@@ -2,8 +2,8 @@ from rtde_control import RTDEControlInterface as RTDEControl
 from rtde_receive import RTDEReceiveInterface as RTDEReceive
 import time
 
-rtde_c = RTDEControl("192.168.1.104")
-rtde_r = RTDEReceive("192.168.1.104")
+rtde_c = RTDEControl("192.168.1.101") # Change to your robot's IP address
+rtde_r = RTDEReceive("192.168.1.101") # Change to your robot's IP address
 init_q = rtde_r.getActualQ()
 
 # Target in the robot base

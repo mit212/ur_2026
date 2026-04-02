@@ -8,10 +8,10 @@ import numpy as np
 import cv2
 
 # Initialize the RTDE interfaces
-rtde_r = rtde_receive.RTDEReceiveInterface("192.168.1.104")
-rtde_c = rtde_control.RTDEControlInterface("192.168.1.104")
+rtde_r = rtde_receive.RTDEReceiveInterface("192.168.1.101")
+rtde_c = rtde_control.RTDEControlInterface("192.168.1.101")
 gripper = robotiq_gripper.RobotiqGripper()
-gripper.connect("192.168.1.104", 63352)
+gripper.connect("192.168.1.101", 63352)
 gripper.activate()
 
 # Connect to the grey Logitech joystick. Note that your team will have to build your own joystick :)
