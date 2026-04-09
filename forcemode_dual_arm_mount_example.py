@@ -9,7 +9,7 @@ from rtde_control import RTDEControlInterface as RTDEControl
 rtde_c_L = RTDEControl("192.168.1.101")
 rtde_c_R = RTDEControl("192.168.1.102")
 
-onnection_tries = 0
+connection_tries = 0
 if not rtde_c_L.isConnected():
     while connection_tries < 3:
         rtde_c_L.reconnect()
